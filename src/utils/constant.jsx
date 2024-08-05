@@ -2,7 +2,6 @@ import { BsBagXFill, BsClipboardCheck, BsHandbag } from "react-icons/bs";
 import { IoBagAdd } from "react-icons/io5";
 import { MdHome } from "react-icons/md";
 import { FaCartPlus } from "react-icons/fa";
-import { LuShoppingBag } from "react-icons/lu";
 import { FaArrowDownUpLock } from "react-icons/fa6";
 import { CiCreditCard2 } from "react-icons/ci";
 import { RiBarChartBoxLine } from "react-icons/ri";
@@ -76,43 +75,43 @@ export const tableData = [
   {
     profile: image1,
     name: "Wade Warren",
-    orderNo: 123456789,
+    orderNo: 15478256,
     amount: "$124.00",
     status: 1,
   },
   {
     profile: image2,
     name: "Jane Cooper",
-    orderNo: 12378989,
-    amount: "$124.00",
+    orderNo: 48965786,
+    amount: "$365.02",
     status: 0,
   },
   {
     profile: image3,
     name: "Guy Hawkins",
-    orderNo: 123456789,
-    amount: "$124.00",
+    orderNo: 78958215,
+    amount: "$45.88",
     status: 2,
   },
   {
     profile: image4,
     name: "kristin Watson",
-    orderNo: 123456789,
-    amount: "$124.00",
+    orderNo: 20965732,
+    amount: "$65.00",
     status: 1,
   },
   {
     profile: image1,
     name: "Cody Fisher",
-    orderNo: 123456789,
-    amount: "$124.00",
+    orderNo: 95715620,
+    amount: "$545.00",
     status: 1,
   },
   {
     profile: image2,
     name: "Savannah Nguyen",
-    orderNo: 123456789,
-    amount: "$124.00",
+    orderNo: 78514568,
+    amount: "$128.20",
     status: 1,
   },
 ];
