@@ -1,0 +1,106 @@
+.box-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.box-item {
+  background: #525353;
+  border-radius: 5px;
+  padding: 7px;
+  width: 25%;
+}
+.icon-box {
+  width: 40px;
+  text-align: center;
+  background: #4969af;
+  padding: 5px;
+  border-radius: 8px;
+}
+.icon-box1 {
+  width: 40px;
+  text-align: center;
+  background: #5bd6a4;
+  padding: 5px;
+  border-radius: 8px;
+}
+.icon-box2 {
+  width: 40px;
+  text-align: center;
+  background: #d97f67;
+  padding: 5px;
+  border-radius: 8px;
+}
+.icon-box3 {
+  width: 40px;
+  text-align: center;
+  background: #da6fda;
+  padding: 5px;
+  border-radius: 8px;
+}
+.active {
+  color: rgb(48, 197, 87);
+}
+.de-active {
+  color: rgb(197, 48, 48);
+}
+.activity-container {
+  background: #525353;
+  border-radius: 5px;
+  padding: 9px;
+}
+.profit-box {
+  background: #525353;
+  border-radius: 5px;
+  padding: 12px;
+}
+.location-icon {
+  width: 50px;
+  height: 50px;
+  background: #d97f67;
+  border-radius: 50%;
+  padding: 10px;
+}
+.dish-icon {
+  width: 50px;
+  height: 50px;
+  background: #4969af;
+  border-radius: 50%;
+  padding: 10px;
+}
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  background: #77d2ee;
+  border-radius: 50%;
+  padding: 10px;
+}
+.arrow-icon {
+  width: 28px;
+  height: 28px;
+  background-color: #3f3f3f;
+  border-radius: 50%;
+  padding: 3px;
+}
+.table-responsive {
+  overflow-x: auto;
+}
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.feedback-container {
+  height: 340px;
+  overflow-y: auto;
+}
+.tableBg{
+  background-color: #525353 !important;
+}
+@media screen and (max-width: 728px) {
+  .box-container {
+    flex-direction: column;
+  }
+  .box-item {
+    width: 100%;
+  }
+}

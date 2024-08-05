@@ -1,0 +1,25 @@
+.CircularProgressbar {
+  width: 40% !important;
+  margin-left: 40%;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+td {
+  text-wrap: nowrap;
+}
+.small-font{
+  font-size: 10px;
+}
+h4{
+  font-weight: 700 !important;
+}
+h5{
+  font-weight: 700 !important;
+}
