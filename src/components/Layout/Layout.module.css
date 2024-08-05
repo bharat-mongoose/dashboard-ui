@@ -21,6 +21,7 @@
   position: relative;
 }
 .search-box {
+  width: 200px;
   border-radius: 5px;
   padding: 5px 30px;
   color: #fff;
