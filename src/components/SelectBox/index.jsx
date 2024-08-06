@@ -4,15 +4,16 @@ import Select from "react-select";
 const customStyles = {
   control: (provided) => ({
     ...provided,
-    backgroundColor: "#525353",
+    backgroundColor: "#1f2029",
+    borderRadius: "20px",
   }),
   menu: (provided) => ({
     ...provided,
-    backgroundColor: "#525353",
+    backgroundColor: "#1f2029",
   }),
   option: (provided, state) => ({
     ...provided,
-    backgroundColor: state.isFocused ? "#525353" : "#525353",
+    backgroundColor: state.isFocused ? "#1f2029" : "#1f2029",
     color: "#fff",
   }),
   singleValue: (provided) => ({

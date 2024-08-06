@@ -1,38 +1,42 @@
+@import url("../../global.css");
+.background{
+  background: var(--primary-color);
+}
 .box-container {
   display: flex;
   gap: 0.5rem;
 }
 .box-item {
-  background: #525353;
+  background:var(--secondary-color);
   border-radius: 5px;
-  padding: 7px;
+  padding: 1rem;
   width: 25%;
 }
 .icon-box {
   width: 40px;
   text-align: center;
-  background: #4969af;
+  background: #243684;
   padding: 5px;
   border-radius: 8px;
 }
 .icon-box1 {
   width: 40px;
   text-align: center;
-  background: #5bd6a4;
+  background: #175245;
   padding: 5px;
   border-radius: 8px;
 }
 .icon-box2 {
   width: 40px;
   text-align: center;
-  background: #d97f67;
+  background: #643437;
   padding: 5px;
   border-radius: 8px;
 }
 .icon-box3 {
   width: 40px;
   text-align: center;
-  background: #da6fda;
+  background: #592b4c;
   padding: 5px;
   border-radius: 8px;
 }
@@ -43,40 +47,40 @@
   color: rgb(197, 48, 48);
 }
 .activity-container {
-  background: #525353;
+  background: #1f2029;
   border-radius: 5px;
-  padding: 9px;
+  padding: 0.5rem 1rem;
 }
 .profit-box {
-  background: #525353;
+  background: var(--secondary-color);
   border-radius: 5px;
-  padding: 12px;
+  padding: 1.5rem;
 }
 .location-icon {
   width: 50px;
   height: 50px;
-  background: #d97f67;
+  background: #632e3a;
   border-radius: 50%;
   padding: 10px;
 }
 .dish-icon {
   width: 50px;
   height: 50px;
-  background: #4969af;
+  background: #293268;
   border-radius: 50%;
   padding: 10px;
 }
 .menu-icon {
   width: 50px;
   height: 50px;
-  background: #77d2ee;
+  background: #244c60;
   border-radius: 50%;
   padding: 10px;
 }
 .arrow-icon {
   width: 28px;
   height: 28px;
-  background-color: #3f3f3f;
+  background-color: #48494d;
   border-radius: 50%;
   padding: 3px;
 }
@@ -90,11 +94,11 @@
 }
 
 .feedback-container {
-  height: 340px;
+  height: 310px;
   overflow-y: auto;
 }
 .tableBg{
-  background-color: #525353 !important;
+  background-color:var(--secondary-color);
 }
 @media screen and (max-width: 728px) {
   .box-container {

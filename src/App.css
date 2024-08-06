@@ -1,7 +1,3 @@
-.CircularProgressbar {
-  width: 40% !important;
-  margin-left: 40%;
-}
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -22,4 +18,28 @@ h4{
 }
 h5{
   font-weight: 700 !important;
+}
+.navbar-toggler-icon{
+background-color: #48494d;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+ h4 {
+   font-size: 12px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+}
+.CircularProgressbar {
+  width: 5rem !important;
+  margin-left: 3rem;
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .CircularProgressbar {
+    width: 4rem !important;
+    margin-left: 0 !important;
+  }
 }

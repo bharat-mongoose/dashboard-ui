@@ -1,7 +1,8 @@
+@import url("../../global.css");
 .page-wrapper {
   min-height: 100vh;
   display: flex;
-  background-color: #3a3b3c;
+  background-color: var(--secondary-color);
 }
 .page-wrapper > * {
   flex: 0 0 auto;
@@ -10,12 +11,12 @@
   width: calc(100% - 60px);
 }
 .nav-background {
-  background: #3a3b3c;
+  background: var(--secondary-color);
 }
 .sidebar {
   width: 60px;
   height: 100vh;
-  background-color: #3a3b3c;
+  background-color:var(--secondary-color);
 }
 .search-container {
   position: relative;
@@ -26,7 +27,7 @@
   padding: 5px 30px;
   color: #fff;
   border: 1px solid gray;
-  background-color: #3a3b3c;
+  background-color: var(--secondary-color);
 }
 .search-icon {
   position: absolute;
@@ -40,7 +41,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #525353 !important;
+  background: #48494d !important;
 }
 .profile_image {
   width: 30px;
@@ -48,7 +49,10 @@
   border-radius: 50%;
 }
 .nav-item.active .nav-link svg {
-  fill: #4969af !important;
+  fill: #6a98fe !important;
+}
+.vertical_row{
+  border-left:2px solid #6a98fe;
 }
 .cursor-pointer {
   cursor: pointer;

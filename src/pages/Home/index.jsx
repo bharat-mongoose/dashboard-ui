@@ -58,11 +58,11 @@ const Home = () => {
       },
     ],
     background: {
-      fill: "#525353",
+      fill: "#1f2029",
     },
   });
   return (
-    <div className="container-fluid bg-dark  ">
+    <div className={`container-fluid ${styles.background}`}>
       <h3 className="text-white px-md-3 py-3">Dashboard</h3>
       <div className="row px-md-3 px-sm-1">
         <div className="col-md-8 col-sm-12  text-white">
@@ -84,7 +84,7 @@ const Home = () => {
                         }`}>
                         {item.icon}
                       </div>
-                      <p>{item.title}</p>
+                      <p className="mt-1">{item.title}</p>
                     </div>
                     <div className="d-flex justify-content-between">
                       <h4>{item.value}</h4>
@@ -114,10 +114,11 @@ const Home = () => {
         </div>
         <div className="col-md-4 col-sm-12 text-white mt-2 mt-md-0">
           <div className={styles["profit-box"]}>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between mt-1">
               <div>
-                <h5>Net Profit</h5>
+                <h6>Net Profit</h6>
                 <h4>$6759.25</h4>
+
                 <div className={`${styles["active"]} mt-3`}>
                   <IoMdArrowDropup />
                   3%
@@ -185,7 +186,7 @@ const Home = () => {
               <h5>Recent Orders</h5>
             </div>
             <div className={styles["table-responsive"]}>
-              <table className="table table-dark">
+              <table className={`table table-dark`}>
                 <thead>
                   <tr>
                     <th scope="col">Customer</th>
