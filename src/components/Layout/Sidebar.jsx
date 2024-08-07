@@ -30,7 +30,7 @@ const Sidebar = () => {
                     className={`nav-item text-white my-1  ${
                       activeIndex === i ? styles.vertical_row : ""
                     }`}
-                    key={i}
+                    key={item.id}
                     onClick={() => {
                       setActiveIndex(i);
                       navigate(item.url);

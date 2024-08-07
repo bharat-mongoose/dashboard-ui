@@ -70,7 +70,7 @@ const Home = () => {
             {boxData?.length &&
               boxData?.map((item, i) => {
                 return (
-                  <div className={styles["box-item"]} key={i}>
+                  <div className={styles["box-item"]} key={item.id}>
                     <div className="mt-1">
                       <div
                         className={`${
@@ -198,7 +198,7 @@ const Home = () => {
                 <tbody>
                   {tableData?.map((item, i) => {
                     return (
-                      <tr key={i}>
+                      <tr key={item.id}>
                         <td className="d-flex gap-2">
                           <img
                             src={item.profile}
@@ -211,11 +211,11 @@ const Home = () => {
                         <td>{item.amount}</td>
                         <td>
                           {item.status == 1 ? (
-                            <span class="badge bg-success">Delivered</span>
+                            <span className="badge bg-success">Delivered</span>
                           ) : item.status == 0 ? (
-                            <span class="badge bg-danger">Cancelled</span>
+                            <span className="badge bg-danger">Cancelled</span>
                           ) : (
-                            <span class="badge bg-danger">Pending</span>
+                            <span className="badge bg-danger">Pending</span>
                           )}
                         </td>
                       </tr>
@@ -230,24 +230,25 @@ const Home = () => {
           <div className={styles["profit-box"]}>
             <h5>Customer's Feedback</h5>
             <div className={`${styles["feedback-container"]} mt-2 `}>
-              {feedbackData?.map((val, index) => {
-                return (
-                  <Fragment key={index}>
-                    <div className="d-flex gap-2 ">
-                      <img src={val?.image} className={styles.profile} />
-                      <p>{val?.name}</p>
-                    </div>
-                    {[1, 2, 3, 4, 5].fill(val?.rating).map((rat, i) => {
-                      if (i < val.rating) {
-                        return <FaStar fill="yellow" key={i} />;
-                      }
-                      return <FaStar />;
-                    })}
-                    <p>{val?.description}</p>
-                    <hr />
-                  </Fragment>
-                );
-              })}
+              {feedbackData?.length &&
+                feedbackData.map((val, index) => {
+                  return (
+                    <Fragment key={val.id}>
+                      <div className="d-flex gap-2 ">
+                        <img src={val.image} className={styles.profile} />
+                        <p>{val.name}</p>
+                      </div>
+                      {[1, 2, 3, 4, 5].fill(val.rating).map((rat, i) => {
+                        if (i < val.rating) {
+                          return <FaStar fill="yellow" key={i} />;
+                        }
+                        return <FaStar />;
+                      })}
+                      <p>{val?.description}</p>
+                      <hr />
+                    </Fragment>
+                  );
+                })}
             </div>
           </div>
         </div>
